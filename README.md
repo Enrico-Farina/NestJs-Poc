@@ -14,6 +14,8 @@
 ```bash
 $ npm install
 ```
+Create .env file
+Setup with an JWT_SECRET (You can create a random secret)
 
 ## Compile and run the project
 
