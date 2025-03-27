@@ -14,8 +14,15 @@
 ```bash
 $ npm install
 ```
-Create .env file
-Setup with an JWT_SECRET (You can create a random secret)
+Create .env file, Setup with: <br>
+JWT_SECRET (You can create a random secret) <br>
+SMTP_SERVER (smtp.gmail.com) <br>
+GMAIL_AUTH_USER (your gmail account) <br>
+GMAIL_AUTH_PASS (your gmail mailer code, its not your password) <br> <br>
+In this project, we use a gmail account to send emails. You can search to how implement this. <br>
+For alternative smtp servers, you must lighly modify the code in /email directory.
+
+
 
 ## Compile and run the project
 
