@@ -9,6 +9,10 @@ import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 export class EmailService {
     constructor(private readonly configService: ConfigService) {}
 
+    /**
+     * Create an email transporter with gmail. Credentials via .env. 
+     * @returns email transporter.
+     */
     emailTransport() {
         const transporter = nodemailer.createTransport({
             host: this.configService.get<string>('SMTP_GMAIL'),
@@ -22,12 +26,9 @@ export class EmailService {
         return transporter;
     }
 
-    async sendEmail(){
+    async sendEmail(emailOptions: any){
 
-        const recipents = ["emailToBeConfirmed@gmail.com"];
-        const subject = "Poc-nestJs - Confirmação de Email.";
-        const html = "Este é um email para confirmação de conta na Poc-NestJs";
-
+        const { recipents, subject, html } = emailOptions
 
         const transport = this.emailTransport();
 

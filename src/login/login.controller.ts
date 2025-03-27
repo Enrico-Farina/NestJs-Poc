@@ -44,4 +44,16 @@ export class LoginController {
         return response;
     }
 
+    @Post('forgotpass')
+    async forgotPassFirstStep(@Body('email') email: string) {
+        const response = await this.loginService.forgotPass(email);
+        return response;
+    }
+
+    @Post('recoverpass')
+    async forgotPassSecondStep(@Body('token')token: string, @Body('newpass') newPass: string) {
+        const response = await this.loginService.recoverPass(token, newPass);
+        return response;
+    }
+
 }

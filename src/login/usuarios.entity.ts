@@ -14,4 +14,10 @@ export class usuarios {
 
     @Column()
     password: string;
+
+    @Column({ nullable: true })
+    forgotPassToken: string;
+
+    @Column({ nullable: true })
+    forgotPassExpires: Date;
 }
