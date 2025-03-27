@@ -1,1 +1,0 @@
-{"version":3,"file":"userReturn.dto.js","sourceRoot":"","sources":["../../../src/login/dto/userReturn.dto.ts"],"names":[],"mappings":";;;AAQA,MAAa,UAAU;IAEnB,YAAY,IAAyB;QACjC,IAAI,CAAC,EAAE,GAAG,IAAI,CAAC,EAAE,CAAC;QAClB,IAAI,CAAC,KAAK,GAAG,IAAI,CAAC,KAAK,CAAC;QACxB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC,IAAI,CAAC;IAC1B,CAAC;CAOJ;AAbD,gCAaC"}
